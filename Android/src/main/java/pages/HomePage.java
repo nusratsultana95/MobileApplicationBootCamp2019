@@ -15,7 +15,7 @@ public class HomePage extends MobileAPI {
     WebElement deposit;
     @FindBy (xpath = "*//android.widget.Button[@text='SEND MONEY']")
     WebElement sendMoney;
-   public void uiValidation(){
+   public void validateUpperButtons(){
        sleepFor(10);
        SoftAssert softAssert= new SoftAssert();
        softAssert.assertEquals(accounts.isDisplayed(), true,"accounts isn't displayed");
@@ -47,7 +47,7 @@ public class HomePage extends MobileAPI {
         System.out.println(account + ": has been clicked");
     }
 
-    public void clickOnLogin() {
+    public void validateButton() {
         sleepFor(3);
         String account = accounts.getText();
         accounts.click();

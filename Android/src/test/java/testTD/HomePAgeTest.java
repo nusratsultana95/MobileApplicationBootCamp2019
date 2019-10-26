@@ -16,12 +16,16 @@ public class HomePAgeTest extends MobileAPI {
         homePage.UIvalidations();
     }
     @Test
+    public void testOnUpperButtons(){
+        homePage.validateUpperButtons();
+    }
+    @Test
     public void testOnAccounts(){
       homePage.clickOnAccountt();
     }
     @Test
     public void testLogin(){
-    homePage.clickOnLogin();
+    homePage.validateButton();
     }
     @Test
     public void testSwipeDown(){
